@@ -1,0 +1,4 @@
+*SRC=BAS21;DI_BAS21;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc.
+*Switching Diode
+.MODEL DI_BAS21 D  ( IS=41.7n RS=0.270 BV=200 IBV=100n
++ CJO=2.98p  M=0.333 N=2.35 TT=72.0n )

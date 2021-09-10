@@ -1,0 +1,10 @@
+*line regulation
+.include ../AE01.20.01.004.cir
+.param VSUPPLY=60
+.param ILOAD=0.1
+.param Rbase=1.8k
+.param Radj=120k
+.param Rref=120k
+.dc V1 7 {VSUPPLY} 0.001
+.backanno
+.op

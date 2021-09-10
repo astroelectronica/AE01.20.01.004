@@ -1,0 +1,17 @@
+.title KiCad schematic
+.include "models/BAS21.spice.txt"
+.include "models/C1608C0G1H470J080AA_p.mod"
+.include "models/C2012X5R1E106M125AB_p.mod"
+.include "models/FMMT493.spice.txt"
+.include "models/ZR431.spice.txt"
+XU2 /VZ /VREF 0 ZR431
+V1 /VIN 0 {VSUPPLY}
+D1 /VIN /VC DI_BAS21
+R1 /VC /VZ {Rbase}
+XU1 /VZ /VREF C1608C0G1H470J080AA_p
+R2 /VOUT /VREF {Radj}
+R3 /VREF 0 {Rref}
+Q1 /VC /VZ /VOUT FMMT493
+XU3 /VOUT 0 C2012X5R1E106M125AB_p
+I1 /VOUT 0 {ILOAD}
+.end
